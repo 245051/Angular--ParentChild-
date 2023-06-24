@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'parentchildapp';
+  enterName="April";
+  parentData="";
+
+  transferData(){
+    this.parentData=this.enterName;
+  }
+  value="";
+  sendData(value:string){
+    this.value=value;
+  }
 }
